@@ -1,0 +1,60 @@
+
+> sistema-financeiro@0.1.0 build
+> next build
+
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+  ▲ Next.js 14.2.3
+
+   Creating an optimized production build ...
+(node:10713) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Failed to compile.
+
+app/layout.tsx
+An error occurred in `next/font`.
+
+Error: Cannot find module 'autoprefixer'
+Require stack:
+- /home/ubuntu/sistema-corrigido/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
+- /home/ubuntu/sistema-corrigido/node_modules/next/dist/build/webpack/config/blocks/css/index.js
+- /home/ubuntu/sistema-corrigido/node_modules/next/dist/build/webpack/config/index.js
+- /home/ubuntu/sistema-corrigido/node_modules/next/dist/build/webpack-config.js
+- /home/ubuntu/sistema-corrigido/node_modules/next/dist/build/webpack-build/impl.js
+- /home/ubuntu/sistema-corrigido/node_modules/next/dist/compiled/jest-worker/processChild.js
+    at Function.<anonymous> (node:internal/modules/cjs/loader:1244:15)
+    at /home/ubuntu/sistema-corrigido/node_modules/next/dist/server/require-hook.js:55:36
+    at Function.resolve (node:internal/modules/helpers:146:19)
+    at loadPlugin (/home/ubuntu/sistema-corrigido/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:49:32)
+    at /home/ubuntu/sistema-corrigido/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:56
+    at Array.map (<anonymous>)
+    at getPostCssPlugins (/home/ubuntu/sistema-corrigido/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:47)
+    at async /home/ubuntu/sistema-corrigido/node_modules/next/dist/build/webpack/config/blocks/css/index.js:124:36
+    at async /home/ubuntu/sistema-corrigido/node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js:86:33
+    at async Span.traceAsyncFn (/home/ubuntu/sistema-corrigido/node_modules/next/dist/trace/trace.js:154:20)
+
+./app/api/processar-emails/route.ts
+Error: 
+  [31mx[0m Expected a semicolon
+     ,-[[36;1;4m/home/ubuntu/sistema-corrigido/app/api/processar-emails/route.ts[0m:104:1]
+ [2m104[0m |         .single();
+ [2m105[0m |       
+ [2m106[0m |       let devedorVinculado = null;
+ [2m107[0m |       let nomePix Id = null;
+     : [31;1m                  ^^[0m
+ [2m108[0m |       
+ [2m109[0m |       if (nomePix && nomePix.devedor_id) {
+ [2m110[0m |         // Já existe um vínculo conhecido!
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/api/processar-emails/route.ts
+
+
+> Build failed because of webpack errors
