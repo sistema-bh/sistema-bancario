@@ -1,0 +1,46 @@
+/* Tailwind e estilos globais mínimos para o app router (app/) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Customizações base */
+:root {
+  --bg: #f9fafb;
+  --text: #111827;
+  --muted: #6b7280;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Ajustes simples para containers e botões usados no projeto */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Botão primário */
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Pequenas utilidades */
+.text-muted { color: var(--muted); }
+.shadow-soft { box-shadow: 0 2px 6px rgba(0,0,0,0.06); }
